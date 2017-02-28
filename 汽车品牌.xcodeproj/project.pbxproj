@@ -15,6 +15,9 @@
 		4AD62F191E655DC4003CA526 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AD62F171E655DC4003CA526 /* LaunchScreen.storyboard */; };
 		4AD62F241E655DC4003CA526 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD62F231E655DC4003CA526 /* ____Tests.m */; };
 		4AD62F2F1E655DC4003CA526 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD62F2E1E655DC4003CA526 /* ____UITests.m */; };
+		4AD62F3D1E655DD5003CA526 /* cars_total.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AD62F3C1E655DD5003CA526 /* cars_total.plist */; };
+		4AD62F401E655E9A003CA526 /* GroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD62F3F1E655E9A003CA526 /* GroupModel.m */; };
+		4AD62F471E655F29003CA526 /* CarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD62F461E655F29003CA526 /* CarModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		4AD62F2A1E655DC4003CA526 /* 汽车品牌UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "汽车品牌UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD62F2E1E655DC4003CA526 /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		4AD62F301E655DC4003CA526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AD62F3C1E655DD5003CA526 /* cars_total.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cars_total.plist; sourceTree = "<group>"; };
+		4AD62F3E1E655E9A003CA526 /* GroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupModel.h; sourceTree = "<group>"; };
+		4AD62F3F1E655E9A003CA526 /* GroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupModel.m; sourceTree = "<group>"; };
+		4AD62F451E655F29003CA526 /* CarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarModel.h; sourceTree = "<group>"; };
+		4AD62F461E655F29003CA526 /* CarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +109,10 @@
 		4AD62F081E655DC4003CA526 /* 汽车品牌 */ = {
 			isa = PBXGroup;
 			children = (
-				4AD62F0C1E655DC4003CA526 /* AppDelegate.h */,
-				4AD62F0D1E655DC4003CA526 /* AppDelegate.m */,
-				4AD62F0F1E655DC4003CA526 /* ViewController.h */,
-				4AD62F101E655DC4003CA526 /* ViewController.m */,
-				4AD62F121E655DC4003CA526 /* Main.storyboard */,
-				4AD62F151E655DC4003CA526 /* Assets.xcassets */,
-				4AD62F171E655DC4003CA526 /* LaunchScreen.storyboard */,
-				4AD62F1A1E655DC4003CA526 /* Info.plist */,
+				4AD62F441E655EC8003CA526 /* Others */,
+				4AD62F431E655EBB003CA526 /* Controllers */,
+				4AD62F421E655EB5003CA526 /* Views */,
+				4AD62F411E655EA3003CA526 /* Models */,
 				4AD62F091E655DC4003CA526 /* Supporting Files */,
 			);
 			path = "汽车品牌";
@@ -117,6 +121,9 @@
 		4AD62F091E655DC4003CA526 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4AD62F3C1E655DD5003CA526 /* cars_total.plist */,
+				4AD62F151E655DC4003CA526 /* Assets.xcassets */,
+				4AD62F1A1E655DC4003CA526 /* Info.plist */,
 				4AD62F0A1E655DC4003CA526 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +145,44 @@
 				4AD62F301E655DC4003CA526 /* Info.plist */,
 			);
 			path = "汽车品牌UITests";
+			sourceTree = "<group>";
+		};
+		4AD62F411E655EA3003CA526 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4AD62F3E1E655E9A003CA526 /* GroupModel.h */,
+				4AD62F3F1E655E9A003CA526 /* GroupModel.m */,
+				4AD62F451E655F29003CA526 /* CarModel.h */,
+				4AD62F461E655F29003CA526 /* CarModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4AD62F421E655EB5003CA526 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4AD62F121E655DC4003CA526 /* Main.storyboard */,
+				4AD62F171E655DC4003CA526 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4AD62F431E655EBB003CA526 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4AD62F0F1E655DC4003CA526 /* ViewController.h */,
+				4AD62F101E655DC4003CA526 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4AD62F441E655EC8003CA526 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				4AD62F0C1E655DC4003CA526 /* AppDelegate.h */,
+				4AD62F0D1E655DC4003CA526 /* AppDelegate.m */,
+			);
+			name = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +293,7 @@
 			files = (
 				4AD62F191E655DC4003CA526 /* LaunchScreen.storyboard in Resources */,
 				4AD62F161E655DC4003CA526 /* Assets.xcassets in Resources */,
+				4AD62F3D1E655DD5003CA526 /* cars_total.plist in Resources */,
 				4AD62F141E655DC4003CA526 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +320,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AD62F111E655DC4003CA526 /* ViewController.m in Sources */,
+				4AD62F401E655E9A003CA526 /* GroupModel.m in Sources */,
+				4AD62F471E655F29003CA526 /* CarModel.m in Sources */,
 				4AD62F0E1E655DC4003CA526 /* AppDelegate.m in Sources */,
 				4AD62F0B1E655DC4003CA526 /* main.m in Sources */,
 			);
@@ -418,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "汽车品牌/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "weiwang.----";
@@ -429,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "汽车品牌/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "weiwang.----";
@@ -501,6 +551,7 @@
 				4AD62F351E655DC4003CA526 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4AD62F361E655DC4003CA526 /* Build configuration list for PBXNativeTarget "汽车品牌Tests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +560,7 @@
 				4AD62F381E655DC4003CA526 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4AD62F391E655DC4003CA526 /* Build configuration list for PBXNativeTarget "汽车品牌UITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +569,7 @@
 				4AD62F3B1E655DC4003CA526 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
